@@ -205,7 +205,7 @@ function sortPriceLowtoHigh() {
     showCards();
  }
  function sortPriceHightoLow() {
-  //compare prices from lowest to highest
+  //compare prices from highest to lowest
  
   
   titles.forEach(title => {
