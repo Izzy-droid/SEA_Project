@@ -5,6 +5,7 @@
     <meta name="description" content="A Catalog of Shows Set in Los Angeles" />
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="scripts.js"></script>
+    <link rel="icon" type="image/x-icon" href="puzzle_favicon.png">
   </head>
 
   <body>
@@ -13,22 +14,28 @@
     </header>
 
     <div class="button-arrange">
-      <button onclick="quoteAlert();">Sort A-Z</button>
-      <button onclick="removeLastCard();">Filter</button>
+      <button onclick="sortCardsAtoZ();">Sort A-Z</button>
+      <button onclick="sortCardsZtoA();">Sort Z-A</button>
+      <button onclick="sortPriceLowtoHigh();">Sort by least to high prices</button>
+      <button onclick="sortPriceHightoLow();">Sort by highest to least prices</button>
+      <button onclick="filteredPieces();">Filter by 500+ pieces</button>
     </div>
-
+   
     <div id="card-container"></div>
     <div class="card" style="display: none">
       <div class="card-content">
         <h2>TV Show Title</h2>
-        <img src="" alt="TV Show Poster" />
-        <p>Price</p>
-        <p>test</p>
-        <ul>
-          <li>Bullet Point 1</li>
-          <li>Bullet Point 2</li>
-          <li>Bullet Point 3</li>
-        </ul>
+        <a href ="">
+          <img src="" alt="TV Show Poster" > 
+        </a>
+        
+          <div class="tag-arrange">
+            <p id="tag">here</p>
+          </div>
+        <p id="card-price"></p>
+        <p id="card-itemNum"></p>
+        <p id="card-desc"></p>
+        
         
       </div>
     </div>
